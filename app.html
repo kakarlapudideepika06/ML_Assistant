@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Assistant Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-large">
+    <h2>ML Learning Assistant</h2>
+    <p id="welcomeText"></p>
+
+    <div class="module-grid">
+
+        <div class="card" onclick="openModule('Dataset Analysis')">
+            <img src="https://cdn-icons-png.flaticon.com/512/4149/4149658.png">
+            <h3>Analyze Your Dataset</h3>
+        </div>
+
+        <div class="card" onclick="openModule('Algorithm Recommendation')">
+            <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
+            <h3>Algorithm Recommendation</h3>
+        </div>
+
+        <div class="card" onclick="openModule('Accuracy Analysis')">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+            <h3>Accuracy Analysis</h3>
+        </div>
+
+        <div class="card" onclick="openModule('Chatbot Assistant')">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
+            <h3>Chatbot Assistant</h3>
+        </div>
+
+    </div>
+
+    <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
