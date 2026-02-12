@@ -224,5 +224,24 @@ async function trainModels() {
         <p>${data.dataset_explanation}</p>
     `;
 }
+function signup() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const msg = document.getElementById("message");
+
+    if (!username || !password) {
+        msg.innerText = "Enter username and password";
+        return;
+    }
+
+    if (users[username]) {
+        msg.innerText = "User already exists";
+        return;
+    }
+
+    users[username] = password;
+    msg.innerText = "Account created successfully!";
+}
+
 
 
